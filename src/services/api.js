@@ -2,7 +2,7 @@ import axios from "axios";
 
 // const API_URL = import.meta.env.VITE_API_URL;
 const NODE_ENV = import.meta.env.VITE_NODE_ENV;
-const BASE_API_URL = NODE_ENV ===  "development" ? "/api/v1/task" : import.meta.env.VITE_API_URL
+const BASE_API_URL = NODE_ENV ===  "development" ? "/api/v1/task" : `${import.meta.env.VITE_API_URL}api/v1/task`
 console.log({
   NODE_ENV,
   BASE_API_URL
